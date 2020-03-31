@@ -1,0 +1,33 @@
+.statusbar {
+  width: 100%;
+  height: 2rem;
+  background-color: #7494ff;
+
+  flex-direction: row;
+  justify-content: space-between;
+
+  .menu-icon {
+    height: 100%;
+    padding: 0 7px 0 7px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    i {
+      color: white;
+    }
+
+     &:hover {
+       background-color: orange;
+     }
+  }
+
+  .title {
+
+  }
+
+  .icon-bar {
+
+  }
+}
