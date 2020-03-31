@@ -8,6 +8,8 @@ import { AssetManagerComponent } from './asset-manager/asset-manager.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
 import { StatusbarComponent } from './statusbar/statusbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SettingsComponent } from './settings/settings.component';
+import { ProfilesComponent } from './profiles/profiles.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MenuComponent,
     AssetManagerComponent,
     WorkspaceComponent,
-    StatusbarComponent
+    StatusbarComponent,
+    SettingsComponent,
+    ProfilesComponent
   ],
   imports: [
     BrowserModule,

@@ -15,8 +15,4 @@ export class StatusbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  public showMenu() {
-    console.log("HELLO WORLD");
-  }
 }

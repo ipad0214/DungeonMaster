@@ -1,0 +1,55 @@
+.menu {
+  .icon-container {
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    &:hover {
+      background-color: orange;
+      cursor: pointer;
+    }
+  }
+
+  .toggle {
+    background-color: #7494ff;
+    color: white;
+  }
+
+  .icon-menu {
+    width: 3rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #7494ff;
+    color: white;
+  }
+
+  .extended-menu {
+    width: 10rem;
+    background-color: #7494ff;
+    color: white;
+
+    .menu-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &:hover {
+        background-color: orange;
+        cursor: pointer;
+      }
+
+      .link-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 10px;
+      }
+    }
+  }
+}

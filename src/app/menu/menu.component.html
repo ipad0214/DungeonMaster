@@ -1,7 +1,46 @@
+<div class="menu">
+  <div class="icon-container toggle">
+    <fa-icon [icon]="faEllipsisV" size="2x" *ngIf="extendedMenu" (click)="extendedMenu = !extendedMenu"></fa-icon>
+    <fa-icon [icon]="faEllipsisH" size="2x" *ngIf="!extendedMenu" (click)="extendedMenu = !extendedMenu"></fa-icon>
+  </div>
 
-<div>
-  <nav>
+  <div *ngIf="extendedMenu" class="extended-menu">
+    <div class="menu-item" routerLink="/workspace">
+      <div class="icon-container">
+        <fa-icon size="2x" [icon]="faWrench"></fa-icon>
+      </div>
+      <div class="link-container">
+        <span>Workspace</span>
+      </div>
+    </div>
+    <div class="menu-item" routerLink="/settings">
+      <div class="icon-container">
+        <fa-icon size="2x" [icon]="faCog"></fa-icon>
+      </div>
+      <div class="link-container">
+        <span>Settings</span>
+      </div>
+    </div>
+    <div class="menu-item" routerLink="/profiles">
+      <div class="icon-container">
+        <fa-icon size="2x" [icon]="faUser"></fa-icon>
+      </div>
+      <div class="link-container">
+        <span>Profiles</span>
+      </div>
+    </div>
+  </div>
 
-    <a routerLink="/workspace">Workspace</a>
-  </nav>
+  <div *ngIf="!extendedMenu" class="icon-menu">
+    <div class="icon-container" routerLink="/workspace">
+      <fa-icon size="2x" [icon]="faWrench"></fa-icon>
+    </div>
+    <div class="icon-container" routerLink="/settings">
+      <fa-icon size="2x" [icon]="faCog"></fa-icon>
+    </div>
+    <div class="icon-container" routerLink="/profiles">
+      <fa-icon size="2x" [icon]="faUser"></fa-icon>
+    </div>
+  </div>
 </div>
+
