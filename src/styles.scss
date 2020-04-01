@@ -1,8 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import "colors";
+
 html, body {
   margin: 0 0 0 0;
+  background-color: $content-primary;
+  font-family: "DejaVu Serif";
 }
 
 .flex {
   display: flex;
+}
+
+button, input[type=button], input[type=submit], input[type=reset] {
+  background-color: $primary;
+  height: 2rem;
+  width: 3rem;
 }

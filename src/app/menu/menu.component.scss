@@ -1,4 +1,10 @@
+@import "../../colors";
+
 .menu {
+  min-height: calc(100% - 2rem);
+  position: absolute;
+  background-color: $primary-variant-one;
+
   .icon-container {
     height: 3rem;
     display: flex;
@@ -9,14 +15,14 @@
     padding-right: 0.5rem;
 
     &:hover {
-      background-color: orange;
+      background-color: $primary-variant-two;
       cursor: pointer;
     }
   }
 
   .toggle {
-    background-color: #7494ff;
-    color: white;
+    background-color: $primary-variant-one;
+    color: $primary-text;
   }
 
   .icon-menu {
@@ -25,14 +31,14 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: #7494ff;
-    color: white;
+    background-color: $primary-variant-one;
+    color: $primary-text;
   }
 
   .extended-menu {
     width: 10rem;
-    background-color: #7494ff;
-    color: white;
+    background-color: $primary-variant-one;
+    color: $primary-text;
 
     .menu-item {
       display: flex;
@@ -40,7 +46,7 @@
       justify-content: space-between;
 
       &:hover {
-        background-color: orange;
+        background-color: $primary-variant-two;
         cursor: pointer;
       }
 
